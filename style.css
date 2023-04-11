@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(
+    to top left,
+    rgb(213, 115, 222),
+    rgb(87, 217, 92)
+  );
+}
+
+.show-modal {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 2rem 4rem;
+  margin: 5rem 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10rem;
+  cursor: pointer;
+  border: none;
+  color: black ;
+}
+.show-modal:hover {
+  background-color: rgb(154, 145, 145);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  width: 60%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0.25rem;
+  right: 1rem;
+  font-size: 5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.hidden{
+ display: none;
+}
+
+.card{
+display: flex;
+gap: 1rem;
+margin-right: 24px;
+}
+
+.img{
+width: 170px;
+object-fit: cover;
+
+}
+.text-wrapper{
+display: flex;
+flex-direction: column;
+margin:2rem 1rem;
+font-size: 16px;
+}
+
+.review{
+font-size: larger;
+font-weight: 500;
+}
+
+.author{
+  margin-top: 1rem;
+margin-bottom: 0.1;
+color: blue;
+font-size: large;
+font-weight: 600;
+}
+
+.work{
+font-weight: 500;
+}
